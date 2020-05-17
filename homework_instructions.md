@@ -48,26 +48,26 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### App Setup
 
-1. Create a GitHub repo called `burger` and clone it to your computer.
+1. Create a GitHub repo called `burger` and clone it to your computer.x
 
-2. Make a package.json file by running `npm init` from the command line.
+2. Make a package.json file by running `npm init` from the command line.x
 
-3. Install the Express npm package: `npm install express`.
+3. Install the Express npm package: `npm install express`.x
 
-4. Create a server.js file.
+4. Create a server.js file.x
 
-5. Install the Handlebars npm package: `npm install express-handlebars`.
+5. Install the Handlebars npm package: `npm install express-handlebars`.x
 
-6. Install MySQL npm package: `npm install mysql`.
+6. Install MySQL npm package: `npm install mysql`.x
 
-7. Require the following npm packages inside of the server.js file:
+7. Require the following npm packages inside of the server.js file:x
    * express
 
 #### DB Setup
 
 1. Inside your `burger` directory, create a folder named `db`.
 
-2. In the `db` folder, create a file named `schema.sql`. Write SQL queries this file that do the following:
+2. In the `db` folder, create a file named `schema.sql`. Write SQL queries this file that do the following:x
 
    * Create the `burgers_db`.
    * Switch to or use the `burgers_db`.
@@ -76,11 +76,11 @@ Having an active and healthy commit history on GitHub is important for your futu
      * **burger_name**: a string.
      * **devoured**: a boolean.
 
-3. Still in the `db` folder, create a `seeds.sql` file. In this file, write insert queries to populate the `burgers` table with at least three entries.
+3. Still in the `db` folder, create a `seeds.sql` file. In this file, write insert queries to populate the `burgers` table with at least three entries.x
 
-4. Run the `schema.sql` and `seeds.sql` files into the mysql server from the command line
+4. Run the `schema.sql` and `seeds.sql` files into the mysql server from the command line x
 
-5. Now you're going to run these SQL files.
+*******5. Now you're going to run these SQL files.********
 
    * Make sure you're in the `db` folder of your app.
 
@@ -94,66 +94,66 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### Config Setup
 
-1. Inside your `burger` directory, create a folder named `config`.
+1. Inside your `burger` directory, create a folder named `config`.x
 
-2. Create a `connection.js` file inside `config` directory.
+2. Create a `connection.js` file inside `config` directory.x
 
-   * Inside the `connection.js` file, setup the code to connect Node to MySQL.
+   * Inside the `connection.js` file, setup the code to connect Node to MySQL.x
 
-   * Export the connection.
+   * Export the connection.x
 
-3. Create an `orm.js` file inside `config` directory.
+3. Create an `orm.js` file inside `config` directory.x
 
-   * Import (require) `connection.js` into `orm.js`
+   * Import (require) `connection.js` into `orm.js`x
 
-   * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
+   * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.x
 
      * `selectAll()`
      * `insertOne()`
      * `updateOne()`
 
-   * Export the ORM object in `module.exports`.
+   * Export the ORM object in `module.exports`.x
 
 #### Model setup
 
-* Inside your `burger` directory, create a folder named `models`.
+* Inside your `burger` directory, create a folder named `models`.x
 
-  * In `models`, make a `burger.js` file.
+  * In `models`, make a `burger.js` file.x
 
-    * Inside `burger.js`, import `orm.js` into `burger.js`
+    * Inside `burger.js`, import `orm.js` into `burger.js`x
 
-    * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
+    * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.x
 
-    * Export at the end of the `burger.js` file.
+    * Export at the end of the `burger.js` file.x
 
 #### Controller setup
 
-1. Inside your `burger` directory, create a folder named `controllers`.
+1. Inside your `burger` directory, create a folder named `controllers`.x
 
-2. In `controllers`, create the `burgers_controller.js` file.
+2. In `controllers`, create the `burgers_controller.js` file.x
 
-3. Inside the `burgers_controller.js` file, import the following:
+3. Inside the `burgers_controller.js` file, import the following:x
 
    * Express
    * `burger.js`
 
-4. Create the `router` for the app, and export the `router` at the end of your file.
+4. Create the `router` for the app, and export the `router` at the end of your file.x
 
 #### View setup
 
-1. Inside your `burger` directory, create a folder named `views`.
+1. Inside your `burger` directory, create a folder named `views`.x
 
-   * Create the `index.handlebars` file inside `views` directory.
+   * Create the `index.handlebars` file inside `views` directory.x
 
-   * Create the `layouts` directory inside `views` directory.
+   * Create the `layouts` directory inside `views` directory.x
 
-     * Create the `main.handlebars` file inside `layouts` directory.
+     * Create the `main.handlebars` file inside `layouts` directory.x
 
-     * Setup the `main.handlebars` file so it's able to be used by Handlebars.
+     * Setup the `main.handlebars` file so it's able to be used by Handlebars.x
 
-     * Setup the `index.handlebars` to have the template that Handlebars can render onto.
+     * Setup the `index.handlebars` to have the template that Handlebars can render onto.x
 
-     * Create a button in `index.handlebars` that will submit the user input into the database.
+     * Create a button in `index.handlebars` that will submit the user input into the database.x
 
 #### Directory structure
 
