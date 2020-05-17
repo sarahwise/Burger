@@ -1,7 +1,5 @@
 var express = require("express");
 
-var db = require("./models");
-
 var app = express();
 app.use(express.static("public"));
 
@@ -15,13 +13,11 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
-var routes = require("./controllers/burgers_controller.js");
+var routes = require("./controllers/burgersController.js");
 
 app.use(routes);
 
 var PORT = process.env.PORT || 3000;
-db.sequelize.sync().then(function () {
     app.listen(PORT, function () {
         console.log("App now listening on port:", PORT);
     });
-});
